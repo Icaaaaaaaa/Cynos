@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <h1>Mengenal Gajah Lebih Jauh</h1>
+        <nav>
+            <ul>
+                <a href="#Tentang Gajah">Tentang Gajah</a>
+                <a href="#Dokumentasi">Dokumentasi</a>
+                <a href="#PesanTiket">Tiket</a>
+                <a href="#Kontak">Kontak</a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content" id="#Tentang Gajah">
+        <h2>Tentang Gajah</h2>
+        <img src="oRaurus.jpg" alt="" style="width: 300Px;">
+        <p>Gajah Merupakah hewan herbivora yang dapat di temui di berbagai habitat, seperti sabana, hutan, gurun, dan rawa-rawa</p>
+        <details>
+            <summary>Informasi Lengkap tentang gajah</summary>
+            <p>Gajah merupakan hewan herbivora yang dapat ditemui di berbagai habitat, seperti sabana, hutan, gurun, dan rawa-rawa. Mereka cenderung berada di dekat air. Gajah dianggap sebagai spesies kunci karena dampaknya terhadap lingkungan.</p>
+        </details>
+    </div>
+    <div class="content" id="Dokumentasi">
+        <h2>Dokumentasi</h2>
+        <video controls poster="Acumalaka.mp4">
+            <source src="Acumalaka.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h4>Suara</h4>
+        <audio controls>
+            <source src="Audio Acu.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+
+    <div class="content" id="PesanTiket">
+        <h2>Pesan Tiket</h2>
+        <form action="#" method="post" class="ticket-form">
+            <div class="form">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form">
+                <label for="jumlahBerkunjung">Jumlah Pengunjung:</label>
+                <input type="number" id="jumlahBerkunjung" name="jumlahBerkunjung" required>
+            </div>
+            <div class="form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form">
+                <label for="tipeTiket">Tipe Tiket:</label>
+                <select name="tipeTiket" id="tipeTiket">
+                    <option value="umum">Umum</option>
+                    <option value="eksekutif">Eksekutif</option>
+                </select>
+            </div>
+            <div class="form">
+                <label for="metodePembayaran">Metode Pembayaran:</label>
+                <select name="metodePembayaran" id="metodePembayaran">
+                    <option value="cash">Cash</option>
+                    <option value="cashless">Cashless</option>
+                </select>
+            </div>
+            <button type="submit">Pesan Tiket</button>
+        </form>
+    </div>
+
+    <footer id="Kontak">
+        <div class="content">
+            <h2>Kontak</h2>
+            <p>&copy; 2024 Disa Dilindungi</p>
+        </div>
+    </footer>
+</body>
+</html>
